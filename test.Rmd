@@ -2,7 +2,7 @@
 title: "R Notebook2"
 output:
    html_document:
-      self_contained: true
+      self_contained: false
       keep_md: true
 ---
 
@@ -35,7 +35,7 @@ p
 ```{r}
 library(plotly)
 a <- ggplotly(p)
-a
+
 ```
 ```{r}
  htmltools::tagList(list(a))
